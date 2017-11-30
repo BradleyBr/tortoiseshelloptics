@@ -1,0 +1,117 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+header {
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.bannercontainer {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.bannerheader {
+  display: flex;
+  background-color: cadetblue;
+  width: 960px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.logo p {
+  padding: 1rem 0;
+  color: white;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+.navigation {
+  display: flex;
+  padding: 1rem 2rem 1rem 0;
+}
+
+.navigation span {
+  padding-left: 2rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+}
+
+.quotecontainer {
+  display: flex;
+  position: relative;
+  margin-top: 10rem;
+  justify-content: flex-end;
+  left: 2rem;
+
+
+}
+
+.bannerquote {
+  background-color: white;
+  justify-content: flex-end;
+  padding: 1.5rem 5rem;
+}
+
+.bannerquote h1 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.servicecontainer {
+  display: flex;
+  width: 960px;
+  margin: 3rem auto;
+  justify-content: center;
+
+}
+
+.services {
+  display: flex;
+  height: 8rem;
+}
+
+.exams, .fittings, .delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+.fittings img, .delivery img {
+  width: 5rem;
+}
+
+.services p {
+  text-align: center;
+}
+
+
+.fittings {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
