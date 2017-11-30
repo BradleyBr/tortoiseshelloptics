@@ -3,6 +3,10 @@ html {
   line-height: 1.4;
 }
 
+ body {
+  line-height: 1.4;
+}
+
 header {
   background-image: url("../images/glasses-bg.png");
   background-position: center;
@@ -114,4 +118,49 @@ header {
 .fittings {
   margin-left: 6rem;
   margin-right: 6rem;
+}
+
+.infocontainer {
+  display: flex;
+  margin: 0 auto 5rem auto;
+  width: 960px;
+  justify-content: center;
+}
+
+.aboutus {
+  display: flex;
+  justify-content: center;
+}
+
+.philosophy, .appointments {
+  width: 35%;
+}
+
+.appointments {
+  margin-left: 5%;
+}
+
+.philosophy h2, .appointments h2 {
+  width: 10rem;
+  background-color: cadetblue;
+  color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
