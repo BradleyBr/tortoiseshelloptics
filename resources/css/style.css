@@ -9,7 +9,6 @@ html {
 
 header {
   background-image: url("../images/glasses-bg.png");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
@@ -56,6 +55,10 @@ header {
   font-family: Helvetica;
   font-size: 1rem;
   color: white;
+}
+
+.smalldisplay {
+  display: none;
 }
 
 .quotecontainer {
@@ -155,12 +158,148 @@ footer {
   display: flex;
   width: 960px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 4rem;
   background-color: azure;
 }
 
 footer img {
   height: 1.5rem;
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  header, .bannercontainer, .bannerheader, .servicecontainer, .infocontainer, footer {
+    width: 100%;
+  }
+
+  .bannercontainer {
+  }
+
+  .quotecontainer {
+    left: 0;
+    margin-right: 2rem;
+    margin-top: 5rem;
+  }
+
+  .bannerquote {
+    padding: 0.75rem 4rem;
+  }
+
+  .bannerquote h1 {
+    font-size: 1.33rem;
+  }
+
+  footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .logo p {
+    display: none;
+  }
+
+  .largerdisplay {
+    display: none;
+  }
+
+  .smalldisplay {
+    display: flex;
+  }
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .quotecontainer {
+    display: block;
+    margin: 0 0;
+
+  }
+
+  .bannerquote {
+    justify-content: center;
+    margin-top: 9rem;
+  }
+
+  .bannerquote h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .servicecontainer {
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .fittings, .delivery {
+    margin-top: 1.54rem;
+  }
+
+  .aboutus {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services {
+    height: auto;
+  }
+
+  .services p {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+
+  .philosophy, .appointments {
+    width: 100%;
+  }
+
+  .philosophy {
+    margin-bottom: 4rem;
+  }
+
+  .appointments {
+    margin-left: 0;
+  }
+
+  .philosophy h2, .appointments h2 {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .philosophy p, .appointments p {
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer img {
+    margin: 0 0;
+  }
 }
